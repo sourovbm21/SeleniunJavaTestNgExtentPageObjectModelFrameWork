@@ -2,6 +2,6 @@ package com.qa.pageUtils;
 
 public interface Constants {
 	
-	String url="";
+	String url="https://www.amazon.co.uk/";
 
 }

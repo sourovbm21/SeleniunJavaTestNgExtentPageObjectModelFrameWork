@@ -29,13 +29,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 	
-	public static WebDriver driver;
+	public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	public ExtentHtmlReporter htmlReporter;
 	//public ExtentSparkReporter ex;
 	
-	
+	public void setDriver(WebDriver driver) {
+		this.driver.set(driver);
+	}
+	public WebDriver  getDriver() {
+		return this.driver.get();
+	}
 	
 	@BeforeTest
 	public void beforeTestMethod() {
@@ -55,9 +60,10 @@ public class TestBase {
 	public void beforeMethodMethod(String browserName,Method testMethod) {
 	    logger = extent.createTest(testMethod.getName());
 		setUpDriver(browserName);
-		driver.manage().window().maximize();
-		driver.get(Constants.url);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		getDriver().manage().window().maximize();
+		getDriver().manage().deleteAllCookies();
+		getDriver().get(Constants.url);
+		getDriver().manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 	}
 	
@@ -66,17 +72,22 @@ public class TestBase {
 		if (result.getStatus()==ITestResult.SUCCESS) {
 			String methodName = result.getMethod().getMethodName();
 			String logTest = "Test Case" + methodName + "passed";
-			Markup m =MarkupHelper.createLabel(logTest, ExtentColor.RED);
+			Markup m =MarkupHelper.createLabel(logTest, ExtentColor.GREEN);
 			logger.log(Status.PASS,m);
 			
-		}else if (result.getStatus()==ITestResult.SUCCESS) {
+		}else if (result.getStatus()==ITestResult.FAILURE) {
 			String methodName = result.getMethod().getMethodName();
 			String logTest = "Test Case" + methodName + "Failed";
 			Markup m =MarkupHelper.createLabel(logTest, ExtentColor.RED);
 			logger.log(Status.FAIL,m);
 			
+		}else if (result.getStatus()==ITestResult.SKIP) {
+			String methodName = result.getMethod().getMethodName();
+			String logTest = "Test Case" + methodName + "Skiped";
+			Markup m =MarkupHelper.createLabel(logTest, ExtentColor.LIME);
+			logger.log(Status.FAIL,m);
 		}
-		driver.quit();
+		getDriver().quit();
 	}
 	
 	@AfterTest
@@ -89,11 +100,11 @@ public class TestBase {
 		
 		if (browserName.contentEquals("chrome")){
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			setDriver( new ChromeDriver());
 			
 		}else if(browserName.contentEquals("firefox") ){
-		WebDriverManager.chromedriver().setup();
-			driver= new FirefoxDriver();
+		WebDriverManager.firefoxdriver().setup();
+		setDriver( new FirefoxDriver());
 		}
 	}
 
