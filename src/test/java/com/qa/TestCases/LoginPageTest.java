@@ -25,6 +25,7 @@ public class LoginPageTest extends TestBase{
 		lp.enterEmailid();
 		
 	}
+	@Test
 	public void clickonContinueBtn() {
 		LandingPageElements Hp = new LandingPageElements(getDriver());
 		Hp.clickonSignInButton();

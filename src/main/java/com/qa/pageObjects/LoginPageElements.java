@@ -26,13 +26,13 @@ public class LoginPageElements {
 	
 	public void enterEmailid() {
 		ElementFetch ef = new ElementFetch();
-		ef.getWebElement(driver,"ID",emailAddress ).sendKeys("HELLO@gmail.com");
+		ef.getWebElement(driver,"ID",emailAddress ).sendKeys("user@phptravels.com");
 	}
 	
 	public boolean clickContinueButton () {
 		ElementFetch ef = new ElementFetch();
 		ef.getWebElement(driver,"ID", comtinueBtn).click();
-		return ef.getWebElement(driver,"CSS", comtinueBtn).isDisplayed();
+		return ef.getWebElement(driver,"CSS", errorMsg).isDisplayed();
 		
 		
 	}

@@ -9,7 +9,7 @@
 	 <test name="Running in Chrome Browser ">
 	      <parameter name="browserName" value="chrome"></parameter>
 		       <classes>
-	             <class name="com.qa.TestCases.LandingPageTest"></class>  	            
+	             <class name="com.qa.TestCases.LoginPageTest"></class>  	            
 		      </classes>
 	 </test>
 	 

@@ -7,15 +7,15 @@
   <test thread-count="3" parallel="tests" name="Running in Chrome Browser (failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="com.qa.TestCases.LandingPageTest">
+      <class name="com.qa.TestCases.LoginPageTest">
         <methods>
-          <include name="clicSign"/>
+          <include name="clickonContinueBtn"/>
           <include name="afterMethodMethod"/>
           <include name="afterTestMethod"/>
           <include name="beforeMethodMethod"/>
           <include name="beforeTestMethod"/>
         </methods>
-      </class> <!-- com.qa.TestCases.LandingPageTest -->
+      </class> <!-- com.qa.TestCases.LoginPageTest -->
     </classes>
   </test> <!-- Running in Chrome Browser (failed) -->
 </suite> <!-- Failed suite [Suite] -->

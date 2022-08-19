@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-17T14:57:22 BST" name="Suite" finished-at="2022-08-17T14:57:45 BST" duration-ms="23247">
+  <suite started-at="2022-08-19T12:53:38 BST" name="Suite" finished-at="2022-08-19T12:54:04 BST" duration-ms="26810">
     <groups>
     </groups>
-    <test started-at="2022-08-17T14:57:22 BST" name="Running in Firefox Browser " finished-at="2022-08-17T14:57:38 BST" duration-ms="16580">
+    <test started-at="2022-08-19T12:53:38 BST" name="Running in Firefox Browser " finished-at="2022-08-19T12:54:04 BST" duration-ms="26593">
       <class name="com.qa.TestCases.LoginPageTest">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:com.qa.TestCases.LoginPageTest@120f102b]" started-at="2022-08-17T14:57:22 BST" name="beforeTestMethod" finished-at="2022-08-17T14:57:22 BST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b]" started-at="2022-08-19T12:53:38 BST" name="beforeTestMethod" finished-at="2022-08-19T12:53:38 BST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.qa.TestCases.LoginPageTest@120f102b]" started-at="2022-08-17T14:57:22 BST" name="beforeMethodMethod" finished-at="2022-08-17T14:57:35 BST" duration-ms="12605" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b]" started-at="2022-08-19T12:53:38 BST" name="beforeMethodMethod" finished-at="2022-08-19T12:53:50 BST" duration-ms="12420" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,34 +27,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="checkemaiIdField()[pri:0, instance:com.qa.TestCases.LoginPageTest@120f102b]" started-at="2022-08-17T14:57:35 BST" name="checkemaiIdField" finished-at="2022-08-17T14:57:36 BST" duration-ms="1665" status="PASS">
+        <test-method signature="checkemaiIdField()[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b]" started-at="2022-08-19T12:53:50 BST" name="checkemaiIdField" finished-at="2022-08-19T12:53:52 BST" duration-ms="2005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkemaiIdField -->
-        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.qa.TestCases.LoginPageTest@120f102b]" started-at="2022-08-17T14:57:36 BST" name="afterMethodMethod" finished-at="2022-08-17T14:57:37 BST" duration-ms="1194" status="PASS">
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b]" started-at="2022-08-19T12:53:52 BST" name="afterMethodMethod" finished-at="2022-08-19T12:53:54 BST" duration-ms="1765" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkemaiIdField status=SUCCESS method=LoginPageTest.checkemaiIdField()[pri:0, instance:com.qa.TestCases.LoginPageTest@120f102b] output={null}]]]>
+                <![CDATA[[TestResult name=checkemaiIdField status=SUCCESS method=LoginPageTest.checkemaiIdField()[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.qa.TestCases.LoginPageTest@120f102b]" started-at="2022-08-17T14:57:37 BST" name="afterTestMethod" finished-at="2022-08-17T14:57:38 BST" duration-ms="738" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b]" started-at="2022-08-19T12:53:54 BST" name="beforeMethodMethod" finished-at="2022-08-19T12:54:01 BST" duration-ms="6574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.qa.TestCases.LoginPageTest.clickonContinueBtn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method signature="clickonContinueBtn()[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b]" started-at="2022-08-19T12:54:01 BST" name="clickonContinueBtn" finished-at="2022-08-19T12:54:03 BST" duration-ms="1920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonContinueBtn -->
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b]" started-at="2022-08-19T12:54:03 BST" name="afterMethodMethod" finished-at="2022-08-19T12:54:04 BST" duration-ms="955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickonContinueBtn status=SUCCESS method=LoginPageTest.clickonContinueBtn()[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodMethod -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.qa.TestCases.LoginPageTest@272ed83b]" started-at="2022-08-19T12:54:04 BST" name="afterTestMethod" finished-at="2022-08-19T12:54:04 BST" duration-ms="577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- com.qa.TestCases.LoginPageTest -->
     </test> <!-- Running in Firefox Browser  -->
-    <test started-at="2022-08-17T14:57:22 BST" name="Running in Chrome Browser " finished-at="2022-08-17T14:57:45 BST" duration-ms="23247">
-      <class name="com.qa.TestCases.LandingPageTest">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:com.qa.TestCases.LandingPageTest@1f97cf0d]" started-at="2022-08-17T14:57:22 BST" name="beforeTestMethod" finished-at="2022-08-17T14:57:22 BST" duration-ms="316" status="PASS">
+    <test started-at="2022-08-19T12:53:38 BST" name="Running in Chrome Browser " finished-at="2022-08-19T12:54:04 BST" duration-ms="26810">
+      <class name="com.qa.TestCases.LoginPageTest">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39]" started-at="2022-08-19T12:53:38 BST" name="beforeTestMethod" finished-at="2022-08-19T12:53:38 BST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.qa.TestCases.LandingPageTest@1f97cf0d]" started-at="2022-08-17T14:57:22 BST" name="beforeMethodMethod" finished-at="2022-08-17T14:57:30 BST" duration-ms="8314" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39]" started-at="2022-08-19T12:53:38 BST" name="beforeMethodMethod" finished-at="2022-08-19T12:53:45 BST" duration-ms="7343" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,36 +94,67 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.qa.TestCases.LandingPageTest.clicSign()]]>
+                <![CDATA[public void com.qa.TestCases.LoginPageTest.checkemaiIdField()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="clicSign()[pri:0, instance:com.qa.TestCases.LandingPageTest@1f97cf0d]" started-at="2022-08-17T14:57:30 BST" name="clicSign" finished-at="2022-08-17T14:57:44 BST" duration-ms="14218" status="FAIL">
+        <test-method signature="checkemaiIdField()[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39]" started-at="2022-08-19T12:53:45 BST" name="checkemaiIdField" finished-at="2022-08-19T12:53:50 BST" duration-ms="4398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkemaiIdField -->
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39]" started-at="2022-08-19T12:53:50 BST" name="afterMethodMethod" finished-at="2022-08-19T12:53:50 BST" duration-ms="745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkemaiIdField status=SUCCESS method=LoginPageTest.checkemaiIdField()[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodMethod -->
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39]" started-at="2022-08-19T12:53:50 BST" name="beforeMethodMethod" finished-at="2022-08-19T12:53:54 BST" duration-ms="3194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.qa.TestCases.LoginPageTest.clickonContinueBtn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method signature="clickonContinueBtn()[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39]" started-at="2022-08-19T12:53:54 BST" name="clickonContinueBtn" finished-at="2022-08-19T12:54:04 BST" duration-ms="10051" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Login')]"}
-  (Session info: chrome=104.0.5112.79)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Hello, Sign in']"}
+  (Session info: chrome=104.0.5112.101)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Tohidurs-Air', ip: '2a02:c7e:10b3:1200:3c11:6870:6597:d343%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.15.1'
+System info: host: 'Tohidurs-Air', ip: '2a02:c7e:10b3:1200:2d10:1453:c31b:454e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:52109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 10033c557de1758cd97a6f58959fe5d2
-*** Element info: {Using=xpath, value=//h1[contains(text(),'Login')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:60232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d25a91691151511a2910c0c9bff63bef
+*** Element info: {Using=xpath, value=//span[text()='Hello, Sign in']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'Login')]"}
-  (Session info: chrome=104.0.5112.79)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Hello, Sign in']"}
+  (Session info: chrome=104.0.5112.101)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Tohidurs-Air', ip: '2a02:c7e:10b3:1200:3c11:6870:6597:d343%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.15.1'
+System info: host: 'Tohidurs-Air', ip: '2a02:c7e:10b3:1200:2d10:1453:c31b:454e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:52109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 10033c557de1758cd97a6f58959fe5d2
-*** Element info: {Using=xpath, value=//h1[contains(text(),'Login')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:60232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d25a91691151511a2910c0c9bff63bef
+*** Element info: {Using=xpath, value=//span[text()='Hello, Sign in']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -108,8 +170,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at com.qa.pageUtils.ElementFetch.getWebElement(ElementFetch.java:29)
-at com.qa.pageObjects.LoginPageElements.virifyLoginPageOpenOrNot(LoginPageElements.java:24)
-at com.qa.TestCases.LandingPageTest.clicSign(LandingPageTest.java:22)
+at com.qa.pageObjects.LandingPageElements.clickonSignInButton(LandingPageElements.java:22)
+at com.qa.TestCases.LoginPageTest.clickonContinueBtn(LoginPageTest.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,23 +200,23 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clicSign -->
-        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.qa.TestCases.LandingPageTest@1f97cf0d]" started-at="2022-08-17T14:57:44 BST" name="afterMethodMethod" finished-at="2022-08-17T14:57:45 BST" duration-ms="222" status="PASS">
+        </test-method> <!-- clickonContinueBtn -->
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39]" started-at="2022-08-19T12:54:04 BST" name="afterMethodMethod" finished-at="2022-08-19T12:54:04 BST" duration-ms="615" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clicSign status=FAILURE method=LandingPageTest.clicSign()[pri:0, instance:com.qa.TestCases.LandingPageTest@1f97cf0d] output={null}]]]>
+                <![CDATA[[TestResult name=clickonContinueBtn status=FAILURE method=LoginPageTest.clickonContinueBtn()[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.qa.TestCases.LandingPageTest@1f97cf0d]" started-at="2022-08-17T14:57:45 BST" name="afterTestMethod" finished-at="2022-08-17T14:57:45 BST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.qa.TestCases.LoginPageTest@140c9f39]" started-at="2022-08-19T12:54:04 BST" name="afterTestMethod" finished-at="2022-08-19T12:54:04 BST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
-      </class> <!-- com.qa.TestCases.LandingPageTest -->
+      </class> <!-- com.qa.TestCases.LoginPageTest -->
     </test> <!-- Running in Chrome Browser  -->
   </suite> <!-- Suite -->
 </testng-results>

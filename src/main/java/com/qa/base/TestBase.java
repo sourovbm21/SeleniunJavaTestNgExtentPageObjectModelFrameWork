@@ -30,6 +30,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	
 	public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	//public static ThreadLocal<ExtentReports> extent = new ThreadLocal<>();
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	public ExtentHtmlReporter htmlReporter;
