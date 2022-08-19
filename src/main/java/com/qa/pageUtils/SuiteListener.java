@@ -37,16 +37,16 @@ public class SuiteListener implements ITestListener{
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		String  fileName=System.getProperty("user.dir")+ File.separator +"screenshots"+File.separator + result.getMethod().getMethodName();
-		Object currentInstance =  result.getInstance();
-		File file = ((TakesScreenshot)((TestBase)currentInstance).getDriver()).getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(file, new File(fileName + ".png"));
-		} catch (IOException e) {
-						e.printStackTrace();
-		}
-		
-		
+//		String  fileName=System.getProperty("user.dir")+ File.separator +"screenshots"+File.separator + result.getMethod().getMethodName();
+//		Object currentInstance =  result.getInstance();
+//		File file = ((TakesScreenshot)((TestBase)currentInstance).getDriver()).getScreenshotAs(OutputType.FILE);
+//		try {
+//			FileUtils.copyFile(file, new File(fileName + ".png"));
+//		} catch (IOException e) {
+//						e.printStackTrace();
+//		}
+//		
+//		
 		
 		
 		

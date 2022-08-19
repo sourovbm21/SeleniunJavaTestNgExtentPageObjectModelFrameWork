@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="3">
+<suite name="Suite" parallel="classes" thread-count="3">
 
 	        <listeners>
 		           <listener class-name="com.qa.pageUtils.SuiteListener"></listener>
@@ -9,7 +9,8 @@
 	 <test name="Running in Chrome Browser ">
 	      <parameter name="browserName" value="chrome"></parameter>
 		       <classes>
-	             <class name="com.qa.TestCases.LoginPageTest"></class>  	            
+	             <class name="com.qa.TestCases.LoginPageTest"></class>  	 
+	             <class name="com.qa.TestCases.LandingPageTest"></class>           
 		      </classes>
 	 </test>
 	 
@@ -17,6 +18,7 @@
 	      <parameter name="browserName" value="firefox"></parameter>
 		      <classes>	  
 	             <class name="com.qa.TestCases.LoginPageTest"></class>	  
+	             <class name="com.qa.TestCases.LandingPageTest"></class>
 		      </classes>
 	 </test>
 

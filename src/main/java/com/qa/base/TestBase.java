@@ -1,6 +1,7 @@
 package com.qa.base;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
@@ -24,11 +25,14 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.pageUtils.Constants;
+import com.qa.pageUtils.ScreenShotUtilitis;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 	
+	
+	private static ThreadLocal <ExtentTest> extent_local = new ThreadLocal <ExtentTest>();
 	public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	//public static ThreadLocal<ExtentReports> extent = new ThreadLocal<>();
 	public static ExtentReports extent;
@@ -49,17 +53,19 @@ public class TestBase {
 	 htmlReporter.config().setEncoding("utf-8");
 	 htmlReporter.config().setDocumentTitle("Automation Report");
 	 htmlReporter.config().setReportName("Automation test result");
-	 htmlReporter.config().setTheme(Theme.DARK);	 
+	 htmlReporter.config().setTheme(Theme.DARK);	
 	 extent = new ExtentReports();
 	 extent.attachReporter(htmlReporter);
 	 extent.setSystemInfo("Automation Tester","Tohidur Rahman");
 	 
+	
 	}
 	
 	@BeforeMethod
 	@Parameters(value= {"browserName"})
 	public void beforeMethodMethod(String browserName,Method testMethod) {
 	    logger = extent.createTest(testMethod.getName());
+	 //   extent_local.set(logger);
 		setUpDriver(browserName);
 		getDriver().manage().window().maximize();
 		getDriver().manage().deleteAllCookies();
@@ -69,7 +75,7 @@ public class TestBase {
 	}
 	
 	@AfterMethod
-	public void afterMethodMethod(ITestResult result ) {
+	public void afterMethodMethod(ITestResult result ) throws IOException {
 		if (result.getStatus()==ITestResult.SUCCESS) {
 			String methodName = result.getMethod().getMethodName();
 			String logTest = "Test Case" + methodName + "passed";
@@ -81,13 +87,18 @@ public class TestBase {
 			String logTest = "Test Case" + methodName + "Failed";
 			Markup m =MarkupHelper.createLabel(logTest, ExtentColor.RED);
 			logger.log(Status.FAIL,m);
+			String paht = ScreenShotUtilitis.getScreenShot(getDriver(), result.getName());
+			//logger.addScreenCaptureFromPath(methodName +" "+paht);
+			logger.addScreenCaptureFromPath(paht);
 			
 		}else if (result.getStatus()==ITestResult.SKIP) {
 			String methodName = result.getMethod().getMethodName();
 			String logTest = "Test Case" + methodName + "Skiped";
 			Markup m =MarkupHelper.createLabel(logTest, ExtentColor.LIME);
 			logger.log(Status.FAIL,m);
+			
 		}
+		
 		getDriver().quit();
 	}
 	
