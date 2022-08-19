@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.qa.pageUtils.SuiteListener"/>
   </listeners>
-  <test thread-count="3" parallel="classes" name="Running in Chrome Browser (failed)">
+  <test thread-count="2" parallel="classes" name="Running in Chrome Browser (failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
       <class name="com.qa.TestCases.LandingPageTest">
@@ -16,9 +16,18 @@
           <include name="beforeTestMethod"/>
         </methods>
       </class> <!-- com.qa.TestCases.LandingPageTest -->
+      <class name="com.qa.TestCases.LoginPageTest">
+        <methods>
+          <include name="afterMethodMethod"/>
+          <include name="afterTestMethod"/>
+          <include name="checkemaiIdField"/>
+          <include name="beforeMethodMethod"/>
+          <include name="beforeTestMethod"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.LoginPageTest -->
     </classes>
   </test> <!-- Running in Chrome Browser (failed) -->
-  <test thread-count="3" parallel="classes" name="Running in Firefox Browser (failed)">
+  <test thread-count="2" parallel="classes" name="Running in Firefox Browser (failed)">
     <parameter name="browserName" value="firefox"/>
     <classes>
       <class name="com.qa.TestCases.LandingPageTest">

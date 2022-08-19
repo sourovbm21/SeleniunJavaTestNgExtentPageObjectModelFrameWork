@@ -32,11 +32,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	
 	
-	private static ThreadLocal <ExtentTest> extent_local = new ThreadLocal <ExtentTest>();
+	
+	
 	public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-	//public static ThreadLocal<ExtentReports> extent = new ThreadLocal<>();
 	public static ExtentReports extent;
-	public static ExtentTest logger;
+	public static ExtentTest logger;	
 	public ExtentHtmlReporter htmlReporter;
 	//public ExtentSparkReporter ex;
 	
@@ -65,7 +65,7 @@ public class TestBase {
 	@Parameters(value= {"browserName"})
 	public void beforeMethodMethod(String browserName,Method testMethod) {
 	    logger = extent.createTest(testMethod.getName());
-	 //   extent_local.set(logger);
+	//   extent_local.set(logger);
 		setUpDriver(browserName);
 		getDriver().manage().window().maximize();
 		getDriver().manage().deleteAllCookies();
