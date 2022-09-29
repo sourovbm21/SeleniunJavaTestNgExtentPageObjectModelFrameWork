@@ -58,7 +58,6 @@ public class TestBase {
 	 extent.attachReporter(htmlReporter);
 	 extent.setSystemInfo("Automation Tester","Tohidur Rahman");
 	 
-	
 	}
 	
 	@BeforeMethod
@@ -101,6 +100,9 @@ public class TestBase {
 		
 		getDriver().quit();
 	}
+	
+	
+	
 	
 	@AfterTest
 	public void afterTestMethod() {

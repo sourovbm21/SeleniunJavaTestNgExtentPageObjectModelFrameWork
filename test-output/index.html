@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,11 +102,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.TestCases.LoginPageTest" class="method navigator-link" hash-for-method="checkemaiIdField">checkemaiIdField</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.qa.TestCases.LandingPageTest" class="method navigator-link" hash-for-method="clicSign">clicSign</a> <!-- method navigator-link -->
@@ -126,6 +121,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.TestCases.LoginPageTest" class="method navigator-link" hash-for-method="checkemaiIdField">checkemaiIdField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.qa.TestCases.LoginPageTest" class="method navigator-link" hash-for-method="checkemaiIdField">checkemaiIdField</a> <!-- method navigator-link -->
@@ -170,8 +170,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:f50a:cb51:dbe1:1a41%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:49517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fa6d0ad58890767cde11a8f1e5c80abe
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:50587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 228f3ac0cee7e7336751559d24b87a3f
 *** Element info: {Using=xpath, value=//h1[contains(text(),&apos;Login&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -198,14 +198,14 @@ Session ID: fa6d0ad58890767cde11a8f1e5c80abe
                   <a name="clicSign">
                   </a> <!-- clicSign -->
                   <span class="method-name">clicSign</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()=&apos;Hello, Sign in&apos;]
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[contains(text(),&apos;Login&apos;)]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:f50a:cb51:dbe1:1a41%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 8440, moz:profile: /var/folders/hw/9qtphsf54yb..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7bf9219a-3e2a-4bee-9be7-35ce96a92bd1
-*** Element info: {Using=xpath, value=//span[text()=&apos;Hello, Sign in&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 8957, moz:profile: /var/folders/hw/9qtphsf54yb..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6e897150-e191-4965-927d-d18536e43f90
+*** Element info: {Using=xpath, value=//h1[contains(text(),&apos;Login&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -217,50 +217,8 @@ Session ID: 7bf9219a-3e2a-4bee-9be7-35ce96a92bd1
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at com.qa.pageUtils.ElementFetch.getWebElement(ElementFetch.java:29)
-	at com.qa.pageObjects.LandingPageElements.clickonSignInButton(LandingPageElements.java:22)
-	at com.qa.TestCases.LandingPageTest.clicSign(LandingPageTest.java:20)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.TestCases.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkemaiIdField">
-                  </a> <!-- checkemaiIdField -->
-                  <span class="method-name">checkemaiIdField</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Hello, Sign in&apos;]&quot;}
-  (Session info: chrome=104.0.5112.101)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Tohidurs-Air&apos;, ip: &apos;2a02:c7e:10b3:1200:f50a:cb51:dbe1:1a41%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;11.0.15.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/hw/9qtphsf54yb...}, goog:chromeOptions: {debuggerAddress: localhost:49516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c68abfbef8203ae5d367334cb0188275
-*** Element info: {Using=xpath, value=//span[text()=&apos;Hello, Sign in&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.qa.pageUtils.ElementFetch.getWebElement(ElementFetch.java:29)
-	at com.qa.pageObjects.LandingPageElements.clickonSignInButton(LandingPageElements.java:22)
-	at com.qa.TestCases.LoginPageTest.checkemaiIdField(LoginPageTest.java:22)
+	at com.qa.pageObjects.LoginPageElements.virifyLoginPageOpenOrNot(LoginPageElements.java:24)
+	at com.qa.TestCases.LandingPageTest.clicSign(LandingPageTest.java:22)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
@@ -276,6 +234,13 @@ Session ID: c68abfbef8203ae5d367334cb0188275
               <span class="class-name">com.qa.TestCases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkemaiIdField">
+                  </a> <!-- checkemaiIdField -->
+                  <span class="method-name">checkemaiIdField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="checkemaiIdField">
@@ -308,18 +273,18 @@ Session ID: c68abfbef8203ae5d367334cb0188275
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.pageUtils.SuiteListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Running in Chrome Browser &quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Running in Chrome Browser &quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.TestCases.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;com.qa.TestCases.LandingPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Running in Chrome Browser  --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Running in Firefox Browser &quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Running in Firefox Browser &quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.TestCases.LoginPageTest&quot;/&gt;
@@ -370,32 +335,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'clicSign')
 data.setCell(0, 2, 'com.qa.TestCases.LandingPageTest')
-data.setCell(0, 3, 11678);
+data.setCell(0, 3, 11630);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkemaiIdField')
-data.setCell(1, 2, 'com.qa.TestCases.LoginPageTest')
-data.setCell(1, 3, 10073);
+data.setCell(1, 1, 'clicSign')
+data.setCell(1, 2, 'com.qa.TestCases.LandingPageTest')
+data.setCell(1, 3, 11086);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clicSign')
-data.setCell(2, 2, 'com.qa.TestCases.LandingPageTest')
-data.setCell(2, 3, 10044);
+data.setCell(2, 1, 'clickonContinueBtn')
+data.setCell(2, 2, 'com.qa.TestCases.LoginPageTest')
+data.setCell(2, 3, 5568);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickonContinueBtn')
+data.setCell(3, 1, 'checkemaiIdField')
 data.setCell(3, 2, 'com.qa.TestCases.LoginPageTest')
-data.setCell(3, 3, 2263);
+data.setCell(3, 3, 5211);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'clickonContinueBtn')
 data.setCell(4, 2, 'com.qa.TestCases.LoginPageTest')
-data.setCell(4, 3, 2028);
+data.setCell(4, 3, 3070);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'checkemaiIdField')
 data.setCell(5, 2, 'com.qa.TestCases.LoginPageTest')
-data.setCell(5, 3, 1609);
+data.setCell(5, 3, 1533);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -441,24 +406,38 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(chrome, public void com.qa.TestCases.LoginPageTest.checkemaiIdField())</span>
-                <span class="method-start">357 ms</span>
+                <span class="method-start">454 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodMethod(chrome, public void com.qa.TestCases.LoginPageTest.clickonContinueBtn())</span>
+                <span class="method-start">454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkemaiIdField</span>
+                <span class="method-start">14824 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickonContinueBtn</span>
+                <span class="method-start">16682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodMethod([TestResult name=checkemaiIdField status=SUCCESS method=LoginPageTest.checkemaiIdField()[pri:0, inst...)</span>
+                <span class="method-start">20046 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.TestCases.LandingPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(chrome, public void com.qa.TestCases.LandingPageTest.clicSign())</span>
-                <span class="method-start">357 ms</span>
+                <span class="method-start">20301 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.TestCases.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkemaiIdField</span>
-                <span class="method-start">5077 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodMethod([TestResult name=clickonContinueBtn status=SUCCESS method=LoginPageTest.clickonContinueBtn()[pri:0, ...)</span>
+                <span class="method-start">22255 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.TestCases.LandingPageTest</div> <!-- chronological-class-name -->
@@ -466,98 +445,70 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clicSign</span>
-                <span class="method-start">7201 ms</span>
+                <span class="method-start">26582 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.TestCases.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=checkemaiIdField status=FAILURE method=LoginPageTest.checkemaiIdField()[pri:0, inst...)</span>
-                <span class="method-start">15158 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(chrome, public void com.qa.TestCases.LoginPageTest.clickonContinueBtn())</span>
-                <span class="method-start">15683 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.TestCases.LandingPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethodMethod([TestResult name=clicSign status=FAILURE method=LandingPageTest.clicSign()[pri:0, instance:com.qa.Te...)</span>
-                <span class="method-start">18882 ms</span>
+                <span class="method-start">37674 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.TestCases.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">clickonContinueBtn</span>
-                <span class="method-start">20278 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=clickonContinueBtn status=SUCCESS method=LoginPageTest.clickonContinueBtn()[pri:0, ...)</span>
-                <span class="method-start">22308 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestMethod</span>
-                <span class="method-start">22671 ms</span>
+                <span class="method-start">38617 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestMethod</span>
-                <span class="method-start">23244 ms</span>
+                <span class="method-start">39773 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(firefox, public void com.qa.TestCases.LoginPageTest.checkemaiIdField())</span>
-                <span class="method-start">23252 ms</span>
+                <span class="method-start">39778 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodMethod(firefox, public void com.qa.TestCases.LoginPageTest.clickonContinueBtn())</span>
+                <span class="method-start">39784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickonContinueBtn</span>
+                <span class="method-start">63384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkemaiIdField</span>
+                <span class="method-start">63943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodMethod([TestResult name=checkemaiIdField status=SUCCESS method=LoginPageTest.checkemaiIdField()[pri:0, inst...)</span>
+                <span class="method-start">65479 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodMethod([TestResult name=clickonContinueBtn status=SUCCESS method=LoginPageTest.clickonContinueBtn()[pri:0, ...)</span>
+                <span class="method-start">66458 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.TestCases.LandingPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(firefox, public void com.qa.TestCases.LandingPageTest.clicSign())</span>
-                <span class="method-start">23252 ms</span>
+                <span class="method-start">68043 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clicSign</span>
-                <span class="method-start">31043 ms</span>
+                <span class="method-start">75871 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.TestCases.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkemaiIdField</span>
-                <span class="method-start">32101 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=checkemaiIdField status=SUCCESS method=LoginPageTest.checkemaiIdField()[pri:0, inst...)</span>
-                <span class="method-start">33713 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(firefox, public void com.qa.TestCases.LoginPageTest.clickonContinueBtn())</span>
-                <span class="method-start">34984 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.TestCases.LandingPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethodMethod([TestResult name=clicSign status=FAILURE method=LandingPageTest.clicSign()[pri:0, instance:com.qa.Te...)</span>
-                <span class="method-start">41094 ms</span>
+                <span class="method-start">87505 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.TestCases.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">clickonContinueBtn</span>
-                <span class="method-start">41705 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=clickonContinueBtn status=SUCCESS method=LoginPageTest.clickonContinueBtn()[pri:0, ...)</span>
-                <span class="method-start">43970 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestMethod</span>
-                <span class="method-start">45355 ms</span>
+                <span class="method-start">88740 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
