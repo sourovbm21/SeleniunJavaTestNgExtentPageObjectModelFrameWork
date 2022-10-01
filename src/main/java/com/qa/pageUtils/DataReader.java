@@ -10,11 +10,25 @@ import org.apache.commons.io.FileUtils;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+/**
+ * This is an utilities class for data driven approach.
+ * Licence under Author.
+ * It is an illegal to copy this code.
+ * Any help Please contact to Author.
+ * @author Tohidur Rahman
+ * 
+ *
+ */
 
 public class DataReader {
 		
-
-	public List<HashMap<String, String>> getDataToMap(String filePath) throws IOException {
+    /**
+     * Method for JSON File reader.
+     * @param filePath
+     * @return
+     * @throws IOException
+     */
+	public List<HashMap<String, String>> getDataToMapFromJsonFile(String filePath) throws IOException {
 		String jsonContent = FileUtils.readFileToString(new File(filePath),
 				StandardCharsets.UTF_8);	
 	 ObjectMapper mapper = new ObjectMapper();

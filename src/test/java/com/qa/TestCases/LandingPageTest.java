@@ -45,7 +45,7 @@ public class LandingPageTest extends TestBase{
 	public Object[][] getData() throws IOException {
 		
 		DataReader reader = new DataReader();
-		List<HashMap<String,String>> data = reader.getDataToMap(System.getProperty("user.dir")+"/src/main/java/com/qa/TestData/LoginData.json");
+		List<HashMap<String,String>> data = reader.getDataToMapFromJsonFile(System.getProperty("user.dir")+"/src/main/java/com/qa/TestData/LoginData.json");
 		return new Object[][] {{data.get(0)},{data.get(1)}};
 	}
 
