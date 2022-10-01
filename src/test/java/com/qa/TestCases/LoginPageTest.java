@@ -33,8 +33,7 @@ public class LoginPageTest extends TestBase{
 		lp.enterEmailid();
 		boolean b = lp.clickContinueButton();
 		TestBase.logger.info("Clicking on continue button");
-		Assert.assertTrue(b);
-		
+		Assert.assertTrue(b);		
 	}
 
 }
